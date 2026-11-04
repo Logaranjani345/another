@@ -145,6 +145,7 @@ Every command takes `--json`. `--agent` and `--from` default to `$ANOTHER_AGENT`
 - **Path holds** are advisory, expiring leases on project-relative globs. Exclusive holds conflict with overlapping holds; across machines, a clash is a warning, never a lock.
 - **Resources** are model and dev servers, ports, GPUs, containers and jobs, held by owner and borrower leases with TTLs. Orphans are listed, and only a human can reap them (`another reap … --confirm`); reaping is never remote.
 - **Event log**: every change is appended to a signed, chained, append-only log, and the query tables are projections of it. That log is what federation syncs.
+- For concise definitions and distinctions, see the [glossary](docs/GLOSSARY.md).
 
 ## Safety defaults
 
